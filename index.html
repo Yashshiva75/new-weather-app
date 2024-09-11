@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="searchbox">
+                <input type="text" placeholder="Enter city" class="input">
+                <button id="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="error">
+                <p>Sorry Location not found</p>
+                <img src="img/404.png" alt="" class="error">
+            </div>
+            <div class="body">
+                <img src="img/clear.png" alt="" class="weather_img">
+                <div class="weatherbox">
+                    <p class="temp">0<sup>ºC</sup></p>
+                    <p class="desc">Light rain</p>
+                </div>
+                <div class="weather-detail">
+                    <div class="humidity"><i class="fa-solid fa-droplet"></i>
+                        <div class="text"><span id="humidity-sp">45%</span>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="wind"><i class="fa-solid fa-wind"></i>
+                        <div class="text"><span id="wind-sp">12kmh</span>
+                            <p>Wind speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

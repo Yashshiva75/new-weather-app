@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(39, 44, 42);
+}
+
+.container {
+    width: 400px;
+    height: min-content;
+    background-color: #3987b4;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.searchbox {
+    width: 100%;
+    display: flex;
+    height: min-content;
+    justify-content: space-between;
+}
+
+.searchbox input {
+    width: 84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: black;
+    background-color: #e6f5fb;
+    padding: 12px 15px;
+    border-radius: 18px;
+}
+
+.searchbox button {
+    width: 40px;
+    font-size: 20px;
+    background-color: #ababab;
+    padding: 12px 15px;
+    border-radius: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbox button:hover {
+    width: 40px;
+    font-size: 20px;
+    background-color: #7a7979;
+    padding: 12px 15px;
+    border-radius: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.weatherbox {
+    margin-block: 20px;
+    text-align: center;
+}
+
+.weatherbox .temp {
+    font-size: 70px;
+    font-weight: 800;
+    position: relative;
+}
+
+.weatherbox .desc {
+    font-size: 50px;
+}
+
+.weatherbox .temp sup {
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+}
+
+.body .weather_img {
+    width: 60%;
+}
+
+.weather-detail {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.humidity,
+.wind {
+    display: flex;
+    align-items: center;
+}
+
+.humidity {
+    margin-left: 20px;
+}
+
+.wind {
+    margin-right: 20px;
+}
+
+.weather-detail .text {
+    margin-left: 10px;
+}
+
+.weather-detail .humidity {
+    font-weight: 600;
+}
+
+.weather-detail i {
+    font-size: 40px;
+}
+
+.error {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(92, 90, 90);
+    font-weight: 800;
+    width: 250px;
+    margin: 20px auto;
+    display: none;
+}
+
+.error img {
+    display: none;
+}
